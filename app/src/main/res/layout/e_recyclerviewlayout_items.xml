@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="addToItemList"
+    android:orientation="vertical"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/items_xll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp">
+
+        <TextView
+            android:id="@+id/itemName_xtv"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#594009"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/itemType_xtv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#594009"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/ic_rupee"
+            android:id="@+id/rupee_xiv"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/itemPrice_xtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#594009"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/itemQuantityUnit_xtv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#594009"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/editItem_xbtn"
+            android:layout_width="30dp"
+            android:layout_height="30sp"
+
+            android:background="@drawable/circle_bg"
+            android:onClick="editItemClicked"
+            android:rotation="180"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_edit_pencil" />
+
+        <ImageButton
+            android:id="@+id/deleteItem_xbtn"
+            android:layout_width="30dp"
+            android:layout_height="30sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle_bg"
+            android:onClick="deleteChiildButtonClickedK"
+            android:rotation="180"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

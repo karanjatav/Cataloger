@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_activity__users_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.darkknight.cataloger.Activity_UsersList"
+    tools:showIn="@layout/app_bar_activity__users_list"
+    android:paddingTop="5dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/addUserList_xet"
+            android:inputType="textCapWords"
+            android:hint="Create a New List"
+            />
+
+        <ImageButton
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addUserList_xbtn"
+            android:onClick="onAddUserListClicked"
+            android:background="@drawable/ic_plus_symbol"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_userLists"
+
+        >        </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_xrl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your New List by typing in your list name and  touch '+' button"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp" android:padding="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

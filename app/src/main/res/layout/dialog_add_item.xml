@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Add Item"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:id="@+id/addItemTitle_xtv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/itemName_xtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Name:"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/itemName_xet"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Potatos"
+            android:inputType="textCapWords"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/quantityUnits_xtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity Units:"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/quantityUnits_xet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. kgs"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type or Brand:"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/type_xet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="English Oven"
+            android:inputType="textCapWords"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Per Unit:"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_rupee" />
+            <EditText
+                android:id="@+id/price_xet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:gravity="center"
+                android:hint="50"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addItem_xbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Add Item"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/cancelAddItem_xbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

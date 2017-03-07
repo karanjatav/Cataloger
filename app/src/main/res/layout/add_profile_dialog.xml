@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_xtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Add Catalog"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catalog Name:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:paddingStart="5dp"/>
+
+    <EditText
+        android:id="@+id/profileName_xet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Kitchen"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:paddingStart="5dp"/>
+
+    <Spinner
+        android:id="@+id/profileType_xspn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+      android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Proflie_xbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Add Catalog"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/cancelProfile_xbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
